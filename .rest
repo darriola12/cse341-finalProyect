@@ -1,0 +1,45 @@
+### Obtener todas las corbatas
+
+GET http://localhost:3000/ties  
+Accept: application/json
+
+###
+
+### Obtener una corbata por ID
+
+GET http://localhost:3000/ties/{id}  
+Accept: application/json
+
+###
+
+### Crear una nueva corbata
+
+POST http://localhost:3000/ties  
+Content-Type: application/json
+
+{
+"name": "Nombre de la corbata",
+"description": "Descripción de la corbata",
+"price": 100.0,
+"quantity": 10
+}
+
+###
+
+### Actualizar una corbata por ID
+
+PUT http://localhost:3000/ties/{id}  
+Content-Type: application/json
+
+{
+"name": "Nuevo nombre de la corbata",
+"description": "Nueva descripción",
+"price": 120.0,
+"quantity": 5
+}
+
+###
+
+### Eliminar una corbata por ID
+
+DELETE http://localhost:3000/ties/{id}
