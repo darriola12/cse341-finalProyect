@@ -6,8 +6,8 @@ const passport = require("passport");
 const GitHubStrategy = require("passport-github2").Strategy;
 const mongoDb = require("./database/connection");
 const routes = require("./routes");
-const validate = require("../util/validation");
-const userController = require("../controllers/user");
+const validate = require("./util/validation");
+const userController = require("./controllers/user");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
